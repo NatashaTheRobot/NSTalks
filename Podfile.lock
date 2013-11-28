@@ -1,0 +1,10 @@
+PODS:
+  - MSDynamicsDrawerViewController (1.0.1)
+
+DEPENDENCIES:
+  - MSDynamicsDrawerViewController (~> 1.0.1)
+
+SPEC CHECKSUMS:
+  MSDynamicsDrawerViewController: f2d14503f6f92f8dec250fdc503d7fed2587a638
+
+COCOAPODS: 0.25.0
