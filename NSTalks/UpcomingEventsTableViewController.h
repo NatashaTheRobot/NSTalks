@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 NatashaTheRobot. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface UpcomingEventsTableViewController : UITableViewController
+@interface UpcomingEventsTableViewController : PFQueryTableViewController
 
 @end

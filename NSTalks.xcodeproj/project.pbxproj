@@ -34,7 +34,9 @@
 		9C1D2F5318490F47000F0A95 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5218490F47000F0A95 /* StoreKit.framework */; };
 		9C1D2F5518490F4F000F0A95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */; };
 		9C1D2F5B184912AA000F0A95 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */; };
-		9C1D2F6018492BE7000F0A95 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F5F18492BE7000F0A95 /* MenuCell.m */; };
+		9C1D2F6018492BE7000F0A95 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F5F18492BE7000F0A95 /* MenuTableViewCell.m */; };
+		9C1D2F6318492E83000F0A95 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F6218492E83000F0A95 /* Event.m */; };
+		9C1D2F6618493BD5000F0A95 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F6518493BD5000F0A95 /* EventTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +85,12 @@
 		9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9C1D2F5618490F8D000F0A95 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
-		9C1D2F5E18492BE7000F0A95 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
-		9C1D2F5F18492BE7000F0A95 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		9C1D2F5E18492BE7000F0A95 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		9C1D2F5F18492BE7000F0A95 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		9C1D2F6118492E83000F0A95 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		9C1D2F6218492E83000F0A95 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		9C1D2F6418493BD5000F0A95 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		9C1D2F6518493BD5000F0A95 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,12 +176,11 @@
 				9C1D2F131847D086000F0A95 /* AppDelegate.h */,
 				9C1D2F141847D086000F0A95 /* AppDelegate.m */,
 				9C1D2F5618490F8D000F0A95 /* Constants.h */,
-				9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */,
 				9C1D2F161847D086000F0A95 /* Main.storyboard */,
 				9C1D2F1C1847D086000F0A95 /* Images.xcassets */,
 				9C1D2F391847D45E000F0A95 /* ViewControllers */,
-				9C1D2F5D18492B55000F0A95 /* Views */,
 				9C1D2F5C184929DF000F0A95 /* Models */,
+				9C1D2F5D18492B55000F0A95 /* Views */,
 				9C1D2F0B1847D085000F0A95 /* Supporting Files */,
 			);
 			path = NSTalks;
@@ -184,6 +189,7 @@
 		9C1D2F0B1847D085000F0A95 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */,
 				9C1D2F0C1847D085000F0A95 /* NSTalks-Info.plist */,
 				9C1D2F0D1847D085000F0A95 /* InfoPlist.strings */,
 				9C1D2F101847D085000F0A95 /* main.m */,
@@ -224,6 +230,8 @@
 		9C1D2F5C184929DF000F0A95 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C1D2F6118492E83000F0A95 /* Event.h */,
+				9C1D2F6218492E83000F0A95 /* Event.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,8 +239,10 @@
 		9C1D2F5D18492B55000F0A95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9C1D2F5E18492BE7000F0A95 /* MenuCell.h */,
-				9C1D2F5F18492BE7000F0A95 /* MenuCell.m */,
+				9C1D2F5E18492BE7000F0A95 /* MenuTableViewCell.h */,
+				9C1D2F5F18492BE7000F0A95 /* MenuTableViewCell.m */,
+				9C1D2F6418493BD5000F0A95 /* EventTableViewCell.h */,
+				9C1D2F6518493BD5000F0A95 /* EventTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -371,10 +381,12 @@
 			files = (
 				9C1D2F151847D086000F0A95 /* AppDelegate.m in Sources */,
 				9C1D2F3F1848EA0A000F0A95 /* UpcomingEventsTableViewController.m in Sources */,
-				9C1D2F6018492BE7000F0A95 /* MenuCell.m in Sources */,
+				9C1D2F6018492BE7000F0A95 /* MenuTableViewCell.m in Sources */,
 				9C1D2F3C1847D5CA000F0A95 /* MenuViewController.m in Sources */,
+				9C1D2F6618493BD5000F0A95 /* EventTableViewCell.m in Sources */,
 				9C1D2F5B184912AA000F0A95 /* FBMissingSymbols.m in Sources */,
 				9C1D2F111847D085000F0A95 /* main.m in Sources */,
+				9C1D2F6318492E83000F0A95 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,14 +7,26 @@
 //
 
 #import "UpcomingEventsTableViewController.h"
-
-NSString * const kCellIdentifierEvent = @"eventCell";
+#import "EventTableViewCell.h"
+#import "Event.h"
 
 @interface UpcomingEventsTableViewController ()
 
 @end
 
 @implementation UpcomingEventsTableViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.parseClassName = NSStringFromClass(Event.class);
+        self.pullToRefreshEnabled = YES;
+        self.paginationEnabled = YES;
+        self.objectsPerPage = 100;
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -33,26 +45,31 @@ NSString * const kCellIdentifierEvent = @"eventCell";
                                     completion:nil];
 }
 
+#pragma mark - Parse
+
+- (PFQuery *)queryForTable
+{
+    PFQuery *query = [Event query];
+    
+    // If no objects are loaded in memory, we look to the cache first to fill the table
+    // and then subsequently do a query against the network.
+    if ([self.objects count] == 0) {
+        query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    }
+    
+    [query orderByAscending:@"title"];
+    
+    return query;
+}
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(Event *)event
 {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 1;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierEvent forIndexPath:indexPath];
+    EventTableViewCell *eventCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(EventTableViewCell.class) forIndexPath:indexPath];
+    eventCell.event = event;
     
-    cell.textLabel.text = @"hello";
-    
-    return cell;
+    return eventCell;
 }
-
 
 @end

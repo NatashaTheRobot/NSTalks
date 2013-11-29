@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MenuViewController.h"
+#import "Event.h"
 
 @interface AppDelegate ()
 
@@ -83,6 +84,7 @@
 
 - (void)configureParseWithLaunchOptions:(NSDictionary *)launchOptions
 {
+    [Event registerSubclass];
     [Parse setApplicationId:PARSE_APPLICATION_ID clientKey:PARSE_CLIENT_KEY];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 }

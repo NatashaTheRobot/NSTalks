@@ -6,9 +6,14 @@
 //  Copyright (c) 2013 NatashaTheRobot. All rights reserved.
 //
 
-#import "MenuCell.h"
+#import "MenuTableViewCell.h"
 
-@implementation MenuCell
+@implementation MenuTableViewCell
+
+- (void)prepareForReuse
+{
+    self.textLabel.text = nil;
+}
 
 - (void)configureCellWithText:(NSString *)text
 {

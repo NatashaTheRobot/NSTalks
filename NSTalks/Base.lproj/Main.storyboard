@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" textLabel="nRY-PV-Jye" style="IBUITableViewCellStyleDefault" id="az5-Q0-eT8" customClass="MenuCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" textLabel="nRY-PV-Jye" style="IBUITableViewCellStyleDefault" id="az5-Q0-eT8" customClass="MenuTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="az5-Q0-eT8" id="VTq-9M-yde">
@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="138" y="867"/>
         </scene>
-        <!--Upcoming Events Table View Controller - Upcoming-->
+        <!--Upcoming Events Table View Controller - Upcoming Talks-->
         <scene sceneID="FZt-wo-B45">
             <objects>
                 <tableViewController id="YG4-LE-SyL" customClass="UpcomingEventsTableViewController" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" textLabel="tsp-5i-6cC" style="IBUITableViewCellStyleDefault" id="NQE-zf-MNT">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventTableViewCell" textLabel="tsp-5i-6cC" style="IBUITableViewCellStyleDefault" id="NQE-zf-MNT" customClass="EventTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NQE-zf-MNT" id="UnL-vP-7MB">
@@ -89,7 +89,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Upcoming" id="rac-Ig-EZJ">
+                    <navigationItem key="navigationItem" title="Upcoming Talks" id="rac-Ig-EZJ">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon" id="hfE-X5-Y4a">
                             <connections>
                                 <action selector="onMenuBarButtonTap:" destination="YG4-LE-SyL" id="peh-eS-vmY"/>

@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-#import "MenuCell.h"
+#import "MenuTableViewCell.h"
 
 @interface MenuViewController ()
 
@@ -50,7 +50,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(MenuCell.class) forIndexPath:indexPath];
+    MenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(MenuTableViewCell.class) forIndexPath:indexPath];
     
     [cell configureCellWithText:self.menuOptions[indexPath.row]];
     
