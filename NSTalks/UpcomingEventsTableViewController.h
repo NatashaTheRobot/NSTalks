@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UpcomingTalksTableViewController : UITableViewController
+@interface UpcomingEventsTableViewController : UITableViewController
 
 @end

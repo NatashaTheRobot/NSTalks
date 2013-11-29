@@ -22,7 +22,7 @@
 		9C1D2F2E1847D086000F0A95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D2F2C1847D086000F0A95 /* InfoPlist.strings */; };
 		9C1D2F301847D086000F0A95 /* NSTalksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F2F1847D086000F0A95 /* NSTalksTests.m */; };
 		9C1D2F3C1847D5CA000F0A95 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F3B1847D5CA000F0A95 /* MenuViewController.m */; };
-		9C1D2F3F1848EA0A000F0A95 /* UpcomingTalksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F3E1848EA0A000F0A95 /* UpcomingTalksTableViewController.m */; };
+		9C1D2F3F1848EA0A000F0A95 /* UpcomingEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F3E1848EA0A000F0A95 /* UpcomingEventsTableViewController.m */; };
 		9C1D2F4318490ECC000F0A95 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4218490ECC000F0A95 /* Parse.framework */; };
 		9C1D2F4518490EF9000F0A95 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4418490EF9000F0A95 /* AudioToolbox.framework */; };
 		9C1D2F4718490F02000F0A95 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4618490F02000F0A95 /* CFNetwork.framework */; };
@@ -34,6 +34,7 @@
 		9C1D2F5318490F47000F0A95 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5218490F47000F0A95 /* StoreKit.framework */; };
 		9C1D2F5518490F4F000F0A95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */; };
 		9C1D2F5B184912AA000F0A95 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */; };
+		9C1D2F6018492BE7000F0A95 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F5F18492BE7000F0A95 /* MenuCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,8 @@
 		9C1D2F2F1847D086000F0A95 /* NSTalksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTalksTests.m; sourceTree = "<group>"; };
 		9C1D2F3A1847D5CA000F0A95 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		9C1D2F3B1847D5CA000F0A95 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		9C1D2F3D1848EA0A000F0A95 /* UpcomingTalksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingTalksTableViewController.h; sourceTree = "<group>"; };
-		9C1D2F3E1848EA0A000F0A95 /* UpcomingTalksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingTalksTableViewController.m; sourceTree = "<group>"; };
+		9C1D2F3D1848EA0A000F0A95 /* UpcomingEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingEventsTableViewController.h; sourceTree = "<group>"; };
+		9C1D2F3E1848EA0A000F0A95 /* UpcomingEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingEventsTableViewController.m; sourceTree = "<group>"; };
 		9C1D2F4218490ECC000F0A95 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9C1D2F4418490EF9000F0A95 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9C1D2F4618490F02000F0A95 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -82,6 +83,8 @@
 		9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9C1D2F5618490F8D000F0A95 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
+		9C1D2F5E18492BE7000F0A95 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		9C1D2F5F18492BE7000F0A95 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				9C1D2F161847D086000F0A95 /* Main.storyboard */,
 				9C1D2F1C1847D086000F0A95 /* Images.xcassets */,
 				9C1D2F391847D45E000F0A95 /* ViewControllers */,
+				9C1D2F5D18492B55000F0A95 /* Views */,
+				9C1D2F5C184929DF000F0A95 /* Models */,
 				9C1D2F0B1847D085000F0A95 /* Supporting Files */,
 			);
 			path = NSTalks;
@@ -210,10 +215,26 @@
 			children = (
 				9C1D2F3A1847D5CA000F0A95 /* MenuViewController.h */,
 				9C1D2F3B1847D5CA000F0A95 /* MenuViewController.m */,
-				9C1D2F3D1848EA0A000F0A95 /* UpcomingTalksTableViewController.h */,
-				9C1D2F3E1848EA0A000F0A95 /* UpcomingTalksTableViewController.m */,
+				9C1D2F3D1848EA0A000F0A95 /* UpcomingEventsTableViewController.h */,
+				9C1D2F3E1848EA0A000F0A95 /* UpcomingEventsTableViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9C1D2F5C184929DF000F0A95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9C1D2F5D18492B55000F0A95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D2F5E18492BE7000F0A95 /* MenuCell.h */,
+				9C1D2F5F18492BE7000F0A95 /* MenuCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,7 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1D2F151847D086000F0A95 /* AppDelegate.m in Sources */,
-				9C1D2F3F1848EA0A000F0A95 /* UpcomingTalksTableViewController.m in Sources */,
+				9C1D2F3F1848EA0A000F0A95 /* UpcomingEventsTableViewController.m in Sources */,
+				9C1D2F6018492BE7000F0A95 /* MenuCell.m in Sources */,
 				9C1D2F3C1847D5CA000F0A95 /* MenuViewController.m in Sources */,
 				9C1D2F5B184912AA000F0A95 /* FBMissingSymbols.m in Sources */,
 				9C1D2F111847D085000F0A95 /* main.m in Sources */,

@@ -6,13 +6,15 @@
 //  Copyright (c) 2013 NatashaTheRobot. All rights reserved.
 //
 
-#import "UpcomingTalksTableViewController.h"
+#import "UpcomingEventsTableViewController.h"
 
-@interface UpcomingTalksTableViewController ()
+NSString * const kCellIdentifierEvent = @"eventCell";
+
+@interface UpcomingEventsTableViewController ()
 
 @end
 
-@implementation UpcomingTalksTableViewController
+@implementation UpcomingEventsTableViewController
 
 - (void)viewDidLoad
 {
@@ -45,8 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"talkCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierEvent forIndexPath:indexPath];
     
     cell.textLabel.text = @"hello";
     

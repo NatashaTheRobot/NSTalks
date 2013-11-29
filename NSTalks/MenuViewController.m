@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-#import "UpcomingTalksTableViewController.h"
+#import "MenuCell.h"
 
 @interface MenuViewController ()
 
@@ -50,13 +50,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"menuCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = self.menuOptions[indexPath.row];
-    cell.textLabel.textColor = [UIColor whiteColor];
-    UIView *selectedBackgroundView = [UIView new];
-    selectedBackgroundView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.25];
-    cell.selectedBackgroundView = selectedBackgroundView;
+    MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(MenuCell.class) forIndexPath:indexPath];
+    
+    [cell configureCellWithText:self.menuOptions[indexPath.row]];
+    
     return cell;
 }
 
@@ -109,7 +106,7 @@
 - (NSArray *)paneViewControllerIdentifiers
 {
     if (!_paneViewControllerIdentifiers) {
-        self.paneViewControllerIdentifiers = @[@"UpcomingTalksNavigationViewController"];
+        self.paneViewControllerIdentifiers = @[@"UpcomingEventsNavigationViewController"];
     }
     return _paneViewControllerIdentifiers;
 }

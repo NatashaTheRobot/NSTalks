@@ -7,7 +7,7 @@
 //
 
 typedef NS_ENUM(NSUInteger, PaneViewControllerType) {
-    PaneViewControllerTypeUpcomingTalks
+    PaneViewControllerTypeUpcomingEvents
 };
 
 @interface MenuViewController : UITableViewController

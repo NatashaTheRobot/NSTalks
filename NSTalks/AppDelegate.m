@@ -70,7 +70,7 @@
     [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
     
     // Transition to the first view controller
-    [menuViewController transitionToViewController:PaneViewControllerTypeUpcomingTalks];
+    [menuViewController transitionToViewController:PaneViewControllerTypeUpcomingEvents];
    
 }
 
