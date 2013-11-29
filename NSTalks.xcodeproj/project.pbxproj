@@ -23,7 +23,17 @@
 		9C1D2F301847D086000F0A95 /* NSTalksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F2F1847D086000F0A95 /* NSTalksTests.m */; };
 		9C1D2F3C1847D5CA000F0A95 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F3B1847D5CA000F0A95 /* MenuViewController.m */; };
 		9C1D2F3F1848EA0A000F0A95 /* UpcomingTalksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F3E1848EA0A000F0A95 /* UpcomingTalksTableViewController.m */; };
-		9C1D2F411848FCE6000F0A95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F401848FCE6000F0A95 /* QuartzCore.framework */; };
+		9C1D2F4318490ECC000F0A95 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4218490ECC000F0A95 /* Parse.framework */; };
+		9C1D2F4518490EF9000F0A95 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4418490EF9000F0A95 /* AudioToolbox.framework */; };
+		9C1D2F4718490F02000F0A95 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4618490F02000F0A95 /* CFNetwork.framework */; };
+		9C1D2F4918490F16000F0A95 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4818490F16000F0A95 /* CoreLocation.framework */; };
+		9C1D2F4B18490F27000F0A95 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4A18490F27000F0A95 /* libz.1.1.3.dylib */; };
+		9C1D2F4D18490F30000F0A95 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4C18490F30000F0A95 /* MobileCoreServices.framework */; };
+		9C1D2F4F18490F38000F0A95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F4E18490F37000F0A95 /* QuartzCore.framework */; };
+		9C1D2F5118490F3F000F0A95 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5018490F3F000F0A95 /* Security.framework */; };
+		9C1D2F5318490F47000F0A95 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5218490F47000F0A95 /* StoreKit.framework */; };
+		9C1D2F5518490F4F000F0A95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */; };
+		9C1D2F5B184912AA000F0A95 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +70,18 @@
 		9C1D2F3B1847D5CA000F0A95 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		9C1D2F3D1848EA0A000F0A95 /* UpcomingTalksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpcomingTalksTableViewController.h; sourceTree = "<group>"; };
 		9C1D2F3E1848EA0A000F0A95 /* UpcomingTalksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpcomingTalksTableViewController.m; sourceTree = "<group>"; };
-		9C1D2F401848FCE6000F0A95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9C1D2F4218490ECC000F0A95 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9C1D2F4418490EF9000F0A95 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9C1D2F4618490F02000F0A95 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9C1D2F4818490F16000F0A95 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9C1D2F4A18490F27000F0A95 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		9C1D2F4C18490F30000F0A95 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9C1D2F4E18490F37000F0A95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9C1D2F5018490F3F000F0A95 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9C1D2F5218490F47000F0A95 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9C1D2F5618490F8D000F0A95 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +89,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1D2F411848FCE6000F0A95 /* QuartzCore.framework in Frameworks */,
+				9C1D2F5518490F4F000F0A95 /* SystemConfiguration.framework in Frameworks */,
+				9C1D2F5318490F47000F0A95 /* StoreKit.framework in Frameworks */,
+				9C1D2F5118490F3F000F0A95 /* Security.framework in Frameworks */,
+				9C1D2F4F18490F38000F0A95 /* QuartzCore.framework in Frameworks */,
+				9C1D2F4D18490F30000F0A95 /* MobileCoreServices.framework in Frameworks */,
+				9C1D2F4B18490F27000F0A95 /* libz.1.1.3.dylib in Frameworks */,
+				9C1D2F4918490F16000F0A95 /* CoreLocation.framework in Frameworks */,
+				9C1D2F4718490F02000F0A95 /* CFNetwork.framework in Frameworks */,
+				9C1D2F4518490EF9000F0A95 /* AudioToolbox.framework in Frameworks */,
 				9C1D2F071847D085000F0A95 /* CoreGraphics.framework in Frameworks */,
+				9C1D2F4318490ECC000F0A95 /* Parse.framework in Frameworks */,
 				9C1D2F091847D085000F0A95 /* UIKit.framework in Frameworks */,
 				9C1D2F051847D085000F0A95 /* Foundation.framework in Frameworks */,
 				2361548F951F4F59B645B1EB /* libPods.a in Frameworks */,
@@ -112,7 +142,16 @@
 		9C1D2F031847D085000F0A95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C1D2F401848FCE6000F0A95 /* QuartzCore.framework */,
+				9C1D2F5418490F4F000F0A95 /* SystemConfiguration.framework */,
+				9C1D2F5218490F47000F0A95 /* StoreKit.framework */,
+				9C1D2F5018490F3F000F0A95 /* Security.framework */,
+				9C1D2F4E18490F37000F0A95 /* QuartzCore.framework */,
+				9C1D2F4C18490F30000F0A95 /* MobileCoreServices.framework */,
+				9C1D2F4A18490F27000F0A95 /* libz.1.1.3.dylib */,
+				9C1D2F4818490F16000F0A95 /* CoreLocation.framework */,
+				9C1D2F4618490F02000F0A95 /* CFNetwork.framework */,
+				9C1D2F4418490EF9000F0A95 /* AudioToolbox.framework */,
+				9C1D2F4218490ECC000F0A95 /* Parse.framework */,
 				9C1D2F041847D085000F0A95 /* Foundation.framework */,
 				9C1D2F061847D085000F0A95 /* CoreGraphics.framework */,
 				9C1D2F081847D085000F0A95 /* UIKit.framework */,
@@ -127,6 +166,8 @@
 			children = (
 				9C1D2F131847D086000F0A95 /* AppDelegate.h */,
 				9C1D2F141847D086000F0A95 /* AppDelegate.m */,
+				9C1D2F5618490F8D000F0A95 /* Constants.h */,
+				9C1D2F5A184912AA000F0A95 /* FBMissingSymbols.m */,
 				9C1D2F161847D086000F0A95 /* Main.storyboard */,
 				9C1D2F1C1847D086000F0A95 /* Images.xcassets */,
 				9C1D2F391847D45E000F0A95 /* ViewControllers */,
@@ -310,6 +351,7 @@
 				9C1D2F151847D086000F0A95 /* AppDelegate.m in Sources */,
 				9C1D2F3F1848EA0A000F0A95 /* UpcomingTalksTableViewController.m in Sources */,
 				9C1D2F3C1847D5CA000F0A95 /* MenuViewController.m in Sources */,
+				9C1D2F5B184912AA000F0A95 /* FBMissingSymbols.m in Sources */,
 				9C1D2F111847D085000F0A95 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,9 +480,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marina/Dropbox/NatashaTheRobot/NSTalks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSTalks/NSTalks-Prefix.pch";
 				INFOPLIST_FILE = "NSTalks/NSTalks-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					QuartzCore,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,9 +503,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marina/Dropbox/NatashaTheRobot/NSTalks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSTalks/NSTalks-Prefix.pch";
 				INFOPLIST_FILE = "NSTalks/NSTalks-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					QuartzCore,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

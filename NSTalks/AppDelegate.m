@@ -19,25 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.dynamicsDrawerViewController = (MSDynamicsDrawerViewController *)self.window.rootViewController;
-    
-    // Add some example stylers
-    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler],
-                                                             [MSDynamicsDrawerFadeStyler styler],
-                                                             [MSDynamicsDrawerParallaxStyler styler]]
-                                              forDirection:MSDynamicsDrawerDirectionLeft];
-    
-    MenuViewController *menuViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(MenuViewController.class)];
-    menuViewController.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
-    [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
-    
-    // Transition to the first view controller
-    [menuViewController transitionToViewController:PaneViewControllerTypeUpcomingTalks];
-    
-    [self.window makeKeyAndVisible];
-    [self.window addSubview:self.windowBackground];
-    [self.window sendSubviewToBack:self.windowBackground];
-    
+    [self configureParseWithLaunchOptions:launchOptions];
+    [self configureDynamicDrawerMenu];
+    [self configureAppBackground];
     
     return YES;
 }
@@ -67,6 +51,40 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Private Methods
+
+- (void)configureDynamicDrawerMenu
+{
+    self.dynamicsDrawerViewController = (MSDynamicsDrawerViewController *)self.window.rootViewController;
+    
+    // Add some example stylers
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler],
+                                                             [MSDynamicsDrawerFadeStyler styler],
+                                                             [MSDynamicsDrawerParallaxStyler styler]]
+                                              forDirection:MSDynamicsDrawerDirectionLeft];
+    
+    MenuViewController *menuViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(MenuViewController.class)];
+    menuViewController.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
+    [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
+    
+    // Transition to the first view controller
+    [menuViewController transitionToViewController:PaneViewControllerTypeUpcomingTalks];
+   
+}
+
+- (void)configureAppBackground
+{
+    [self.window makeKeyAndVisible];
+    [self.window addSubview:self.windowBackground];
+    [self.window sendSubviewToBack:self.windowBackground];
+}
+
+- (void)configureParseWithLaunchOptions:(NSDictionary *)launchOptions
+{
+    [Parse setApplicationId:PARSE_APPLICATION_ID clientKey:PARSE_CLIENT_KEY];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 }
 
 #pragma mark - Setter / Getter Overrides
