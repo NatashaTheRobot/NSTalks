@@ -7,12 +7,38 @@
 //
 
 #import "AppDelegate.h"
+#import "MenuViewController.h"
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) UIImageView *windowBackground;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.dynamicsDrawerViewController = (MSDynamicsDrawerViewController *)self.window.rootViewController;
+    
+    // Add some example stylers
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler],
+                                                             [MSDynamicsDrawerFadeStyler styler],
+                                                             [MSDynamicsDrawerParallaxStyler styler]]
+                                              forDirection:MSDynamicsDrawerDirectionLeft];
+    
+    MenuViewController *menuViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(MenuViewController.class)];
+    menuViewController.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
+    [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
+    
+    // Transition to the first view controller
+    [menuViewController transitionToViewController:PaneViewControllerTypeUpcomingTalks];
+    
+    [self.window makeKeyAndVisible];
+    [self.window addSubview:self.windowBackground];
+    [self.window sendSubviewToBack:self.windowBackground];
+    
+    
     return YES;
 }
 							
@@ -41,6 +67,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Setter / Getter Overrides
+
+- (UIImageView *)windowBackground
+{
+    if (!_windowBackground) {
+        self.windowBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
+    }
+    return _windowBackground;
 }
 
 @end
