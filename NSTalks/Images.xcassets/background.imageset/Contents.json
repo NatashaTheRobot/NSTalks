@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "WindowBackground.png"
+      "filename" : "background.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "WindowBackground@2x .png"
+      "filename" : "iPhone-Air-640x1136.png"
     }
   ],
   "info" : {
